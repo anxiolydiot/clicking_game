@@ -3,3 +3,6 @@ var srcList = $('img').map(function() {
 }).get();
 
 console.log(srcList);
+
+
+module.exports.srcMod = srcList;
