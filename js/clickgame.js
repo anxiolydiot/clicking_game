@@ -1,5 +1,5 @@
-window.onload = function() {
- 
-    alert( "works...for now" );
- 
-};
+var srcMod = require("./rcb.js");
+
+
+console.log(srcMod.srcList());
+
