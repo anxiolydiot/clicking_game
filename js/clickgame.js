@@ -1,5 +1,12 @@
-var srcMod = require("./rcb.js");
+var srcList = $('img').map(function() {
+    return this.src;
+}).get();
 
 
-console.log(srcMod.srcList());
+
+
+
+function arrayFill() {
+   $("profLink").innerHTML = "Paragraph changed.";
+}
 
