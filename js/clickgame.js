@@ -1,17 +1,24 @@
 var secCount =  20;
-var timer;
+var timer = subSeconds;
+var ready = false;
 var startButton = document.getElementById("startBtn");
 var points = 0;
 var clicksOn= document.getElementsByTagName("img");
 	for(var i=0; i<clicksOn.length;i++){
 		clicksOn[i]= points++;
-		clicksOn[i].onclick= null
+		clicksOn.onClick= null;
+		
 	}
+points= 0;
 
-window.onload = startBtn.addEventListener("click", go)
-
-
-
+function countPoints{
+	if (ready == true){
+		clicksOn = document.getElementsByTagName("img");
+	for(var i=0; i<clicksOn.length;i++){
+		clicksOn[i]= points++;
+		clicksOn.onClick= null;
+	}
+}
 
 
 setTimeout (function() {
