@@ -1,16 +1,60 @@
-var secCount =  20;
-var timer = subSeconds;
-var ready = false;
 var startButton = document.getElementById("startBtn");
-var points = 0;
-var clicksOn= document.getElementsByTagName("img");
-	for(var i=0; i<clicksOn.length;i++){
-		clicksOn[i]= points++;
-		clicksOn.onClick= null;
-		
-	}
-points= 0;
+var imageElements = document.getElementsByTagName("img");
+var totalScore = secondsElapsed = 0;
+var gameTimeout;
 
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+	gameTimeout = setTimeout(endGame, 20000);
+	for(var i = 0; i < imageElements.length; i++) {
+		imageElements[i].addEventListener("click", addScore);
+	}
+	alert("The game has begun!");
+}
+
+function addScore() {
+	if(this.getAttribute("data-clicked") !== "true") {
+		totalScore++;
+		this.setAttribute("data-clicked", "true");
+	}
+
+}
+
+function endGame() {
+	alert("GAME IS OVER! TOTAL POINTS IS " + totalScore);
+}
+
+
+// var secCount =  20;
+// var timer = function subSeconds() {
+// 	secCount-- <= 0;
+// 	setInterval(subSeconds,1000);
+// }
+// var ready = false;
+// var startButton = document.getElementById("startBtn");
+// var clicksOn = document.getElementsByTagName("img");
+
+
+// var points = 
+// function clicksOn()
+// {
+// 	var i;
+// 	for(var i=0; i< img.length;i++){
+// 		clicksOn[i]= points++;
+// 		clicksOn.onClick= null;
+		
+// 	};
+// 	return i++;
+// }
+
+// setTimeout (function() {
+// 	clearInterval(timer);
+// 	startBtn.parentNode.removeChild(startBtn);
+// 	alert ("Good Job, you got" + points +"points!");
+// }, 20000);
+
+/*
 function countPoints{
 	if (ready == true){
 		clicksOn = document.getElementsByTagName("img");
@@ -20,18 +64,20 @@ function countPoints{
 	}
 }
 
-
+//Timeout start to end/
 setTimeout (function() {
 	clearInterval(timer);
 	startBtn.parentNode.removeChild(startBtn);
 	alert ("Good Job, you got" + points);
 }, 20000);
+//Timeout start tp end//
 
+//Count Down timer//
 function subSeconds () {
 	secCount-- <= 0;
 	setInterval(subSeconds,1000);
 }
-
+//Count Down Timer//
 
 
 
