@@ -1,134 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--CSS-->
   <link rel="stylesheet" type="text/css" href="clicking_game.css">
-
+<!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<title>Clicky Game</title>
 </head>
 <body>
     <div class="jumbotron">
       <div class="container">
         <h1> Click RCB People!</h1>
-        <p> You'll have 20 seconds to click as many faces as possible. To increase your score, you'll need to click a new face each time. Click the start button to begin! </p>
-        <p><a class="btn btn-primary btn-lg" href="#" id= "startBtn" role="button">Start! &raquo;</a></p>
+        <p> You'll have 10 seconds to click as many faces as possible. To increase your score, you'll need to click a new face each time. Click the start button to begin! </p>
+        <p><a class="btn btn-primary btn-lg" href="#" id="startBtn" role="button">Start! &raquo;</a></p>
       </div>
     </div>
-   <div class= "container fluid">
-    <div class="row">
-	   <div class="col-md-2"> 
-        <p class="text-center larger-font"> </p>
-        <p class="text-center larger-font"> </p>
-       </div>
-       <div class="col-md-2">
-       <img src = "https:/avatars2.githubusercontent.com/u/15272529?v=3&s=401"
-       >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars2.githubusercontent.com/u/15141560?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars1.githubusercontent.com/u/13262114?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars2.githubusercontent.com/u/15148849?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars1.githubusercontent.com/u/5847215?v=3&s=400"
-         >
-       </div>
-    </div>
-<!--ends first row of possible placements w/ 6 locations-->
-    <div class="row">
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/8173918?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2">
-       <img src = "https://avatars1.githubusercontent.com/u/15133070?v=3&s=400"
-       >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars0.githubusercontent.com/u/15132093?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/15146215?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars1.githubusercontent.com/u/10761518?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars0.githubusercontent.com/u/13789757?v=3&s=400"
-         >
-       </div>
-    </div>
-<!--ends second row of possible placements w/ 12 locations-->
-    <div class="row">
-       <div class="col-md-2"> 
-         <img src = "https://avatars1.githubusercontent.com/u/15222710?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2">
-       <img src = "https://avatars1.githubusercontent.com/u/14007414?v=3&s=400"
-       >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/15349402?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars2.githubusercontent.com/u/10132978?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars0.githubusercontent.com/u/8367991?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/15202556?v=3&s=400"
-         >
-       </div>
-    </div>
-<!--ends third row of possible placements w/ 18 locations-->
-    <div class="row">
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/15148722?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2">
-       <img src = "https://avatars3.githubusercontent.com/u/6061507?v=3&s=400"
-       >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars1.githubusercontent.com/u/1019677?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/15132134?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars3.githubusercontent.com/u/15230422?v=3&s=400"
-         >
-       </div>
-       <div class="col-md-2"> 
-         <img src = "https://avatars1.githubusercontent.com/u/15148133?v=3&s=400"
-         >
-       </div>
-    </div>
-</div>
-<footer>
 
-</footer>
-<!--ends fourth row of possible placements w/ 24 locations-->
+    <div class= "container fluid">
+      <div class="row">
+        <div class="col-md-2"><!--row1-->
+        <!--added missing div with student photo-->
+         <img src = "https://avatars2.githubusercontent.com/u/3849057?v=3&s=400" alt="RCB student image"
+         >
+         </div>
+         <div class="col-md-2">
+         <img src = "https://avatars2.githubusercontent.com/u/15272529?v=3&s=400" alt="RCB student image"
+         >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars2.githubusercontent.com/u/15141560?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars1.githubusercontent.com/u/13262114?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars2.githubusercontent.com/u/15148849?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars1.githubusercontent.com/u/5847215?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+      </div>
+      <!--row 2-->
+      <div class="row">
+         <div class="col-md-2"> 
+           <img src = "https://avatars3.githubusercontent.com/u/8173918?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2">
+         <img src = "https://avatars1.githubusercontent.com/u/15133070?v=3&s=400" alt="RCB student image"
+         >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars0.githubusercontent.com/u/15132093?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars3.githubusercontent.com/u/15146215?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars1.githubusercontent.com/u/10761518?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+         <div class="col-md-2"> 
+           <img src = "https://avatars0.githubusercontent.com/u/13789757?v=3&s=400" alt="RCB student image"
+           >
+         </div>
+      </div>
+      <!--row 3-->
+      <div class="row">
+       <div class="col-md-2"> 
+         <img src = "https://avatars1.githubusercontent.com/u/15222710?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2">
+       <img src = "https://avatars1.githubusercontent.com/u/14007414?v=3&s=400" alt="RCB student image"
+       >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars3.githubusercontent.com/u/15349402?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars2.githubusercontent.com/u/10132978?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars0.githubusercontent.com/u/8367991?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars3.githubusercontent.com/u/15202556?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+      </div>
+      <!--row 4-->
+      <div class="row">
+       <div class="col-md-2"> 
+         <img src = "https://avatars3.githubusercontent.com/u/15148722?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2">
+       <img src = "https://avatars3.githubusercontent.com/u/6061507?v=3&s=400" alt="RCB student image"
+       >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars1.githubusercontent.com/u/1019677?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars3.githubusercontent.com/u/15132134?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars3.githubusercontent.com/u/15230422?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+       <div class="col-md-2"> 
+         <img src = "https://avatars1.githubusercontent.com/u/15148133?v=3&s=400" alt="RCB student image"
+         >
+       </div>
+      </div>
+    </div>
 
-<!--Script Links; Body ends after-->
-<!-- External JS (Local) -->
-<script src="js/clickgame.js"> </script>
+
+    <!--scoreboard to monitor time and score while seeing all images-->
+    <footer id="scoreboard">
+      <div>Time Left:<span id="countdown"></span></div>
+      <div>Score:<span id="totalScore"></span></div> <!--real-time score keeping-->
+    </footer>
+  
+  
+    <!--game Over Modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="gameOverMessage">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">GAME OVER!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Your Score:<span id="finalScore"></span></p>
+            <p id="winOrLose"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="playAgain">Play Again?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--External JS-->
+  <script src="js/clickgame.js"> </script>
+<!--Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
 </body>
 </html>
