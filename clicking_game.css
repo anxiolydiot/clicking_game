@@ -1,6 +1,13 @@
 img{max-width: 100%; 
 display:block; 
 height: auto;
+padding: 5px;
 }
 
+#scoreboard{
+  padding-top: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-style: bold;
+}
 
